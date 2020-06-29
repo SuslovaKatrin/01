@@ -1,7 +1,7 @@
 public partial class form1 : Form
     {
         int count = 0;
-        int Five = 5;
+        int five = 5;
         public form1()
         {
             InitializeComponent();
@@ -11,13 +11,13 @@ public partial class form1 : Form
             count++;
             if (count >= 50)
             {
-                Five = 10;
+                five = 10;
                 Fiveten_btn.Text = "+10";
             }
             if (count < 6)
-                button2.Enabled = true;
+                buttonWin.Enabled = true;
             if (count >= 6)
-                button2.Enabled = false;
+                buttonWin.Enabled = false;
             if (count >= 100)
             {
                 count = 0;
@@ -30,7 +30,7 @@ public partial class form1 : Form
         private void Button2_Click(object sender, EventArgs e)
         {
             count += 2;
-            if (count >= 6) button2.Enabled = false;
+            if (count >= 6) buttonWin.Enabled = false;
           	  count_lbl.Text = count.ToString();
         }
 
@@ -44,20 +44,20 @@ public partial class form1 : Form
             }
             if (count >= 50)
             {
-                Five = 10;
-                Fiveten_btn.Text = "+10";
+                five = 10;
+                fiveten_btn.Text = "+10";
             }
             if (count < 6)
-                button2.Enabled = true;
+                buttonWin.Enabled = true;
             if (count >= 6)
-                button2.Enabled = false;
+                buttonWin.Enabled = false;
             count_lbl.Text = count.ToString();
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
             count = 0;
-            button2.Enabled = true;
+            buttonWin.Enabled = true;
             count_lbl.Text = count.ToString();
         }
 
@@ -71,13 +71,13 @@ public partial class form1 : Form
             }
             if (count >= 50)
             {
-                Five = 10;
-                Fiveten_btn.Text = "+10";
+                five = 10;
+                fiveten_btn.Text = "+10";
             }
             if (count < 6)
-                button2.Enabled = true;
+                buttonWin.Enabled = true;
             if (count >= 6)
-                button2.Enabled = false;
+                buttonWin.Enabled = false;
             count_lbl.Text = count.ToString();
         }
     }
